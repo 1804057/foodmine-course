@@ -4,7 +4,7 @@
   "description": "food selling app",
   "main": "index.js",
   "scripts": {
-    "start":"cd src && nodemon server.ts",
+    "start": "cd src && nodemon server.ts",
     "test": "hello world"
   },
   "repository": {
@@ -25,6 +25,7 @@
   "devDependencies": {
     "@types/cors": "^2.8.15",
     "@types/express": "^4.17.20",
+    "@types/jsonwebtoken": "^9.0.4",
     "nodemon": "^3.0.1",
     "ts-node": "^10.9.1"
   }
