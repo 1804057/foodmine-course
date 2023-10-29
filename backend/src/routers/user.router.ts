@@ -48,8 +48,10 @@ router.post('/register', asyncHandler(
 
     const encryptedPassword = await bcrypt.hash(password, 10); //10 is the salt of the hash
 
+    const mongoose = require('mongoose');
+    const validId = new mongoose.Types.ObjectId();
     const newUser:User = {
-      id:"",
+      id:validId,
       name,
       email: email.toLowerCase(),
       password: encryptedPassword,
