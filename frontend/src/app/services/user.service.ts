@@ -18,7 +18,10 @@ export class UserService {
   constructor(private http:HttpClient, private toastrService: ToastrService) {
     this.userObservable = this.userSubject.asObservable();
    }
-
+  
+  public get currentUser():User{
+    return this.userSubject.value;
+  }
   //the main difference between an interface and a claa is we cant create a new instance from an interface 
   login(userLogin:IUserLogin):Observable<User>{
     return this.http.post<User>(USER_LOGIN_URL, userLogin).pipe(
