@@ -10,6 +10,13 @@
             </text-input>
 
             <default-button text="Login"></default-button>
+            <div class="register">
+                New user? &nbsp;
+                <!-- nbsp = no break space to put a space just -->
+                <a routerLink="/register" [queryParams]="{returnUrl: returnUrl}">
+                    Register Here
+                </a>
+            </div>
         </form>
     </div>
 </div>
