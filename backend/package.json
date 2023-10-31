@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "cd src && nodemon server.ts",
-    "test": "hello world"
+    "build": "npm install && tsc"
   },
   "repository": {
     "type": "git",
@@ -24,7 +24,7 @@
     "dotenv": "^16.3.1",
     "express": "^4.18.2",
     "express-async-handler": "^1.2.0",
-    "mongoose": "^7.6.3",
+    "mongoose": "^8.0.0",
     "typescript": "^5.2.2"
   },
   "devDependencies": {
